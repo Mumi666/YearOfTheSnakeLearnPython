@@ -26,7 +26,8 @@ def parse_redline(infile):
         text = infile.readline()
         if not text:
             break
-        print(parse(text))
+
+        print(text)
 
         text = re.sub(r'[^\w ]', ' ', text)
 

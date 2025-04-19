@@ -1,4 +1,5 @@
 from learn05.bow_engine import BOWEngine
+from learn05.invert_index_engine import InvertIndexEngine
 from learn05.simple_search_engine import SimpleSearchEngine
 
 
@@ -17,5 +18,8 @@ def main(search_engine):
 # simple_search = SimpleSearchEngine()
 # main(simple_search)
 
-bow_engine = BOWEngine()
-main(bow_engine)
+# bow_engine = BOWEngine()
+# main(bow_engine)
+
+invert_engine = InvertIndexEngine()
+main(invert_engine)

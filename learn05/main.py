@@ -1,5 +1,6 @@
 from learn05.bow_engine import BOWEngine
 from learn05.invert_index_engine import InvertIndexEngine
+from learn05.invert_index_engine_with_cache import InvertIndexEngineWithCache
 from learn05.simple_search_engine import SimpleSearchEngine
 
 
@@ -21,5 +22,8 @@ def main(search_engine):
 # bow_engine = BOWEngine()
 # main(bow_engine)
 
-invert_engine = InvertIndexEngine()
-main(invert_engine)
+# invert_engine = InvertIndexEngine()
+# main(invert_engine)
+
+inverse_engine_with_cache = InvertIndexEngineWithCache()
+main(inverse_engine_with_cache)

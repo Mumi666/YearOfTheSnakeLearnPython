@@ -22,7 +22,6 @@ class InvertIndexEngine(SearchEngineBase):
         for query_word in query_words:
             query_words_index.append(0)
 
-        print('query_words_index:', query_words_index)
 
         for query_word in query_words:
             if query_word not in self.inverted_index:
@@ -33,12 +32,8 @@ class InvertIndexEngine(SearchEngineBase):
         while True:
             current_ids = []
             for idx, query_word in enumerate(query_words):
-                print('query_word:', query_word)
-                print('idx:', idx)
                 current_idx = query_words_index[idx]
-                print('current_idx:', current_idx)
                 current_inverted_list = self.inverted_index[query_word]
-                print("inverted list:", current_inverted_list)
                 if current_idx >= len(current_inverted_list):
                     return results
                 current_ids.append(current_inverted_list[current_idx])

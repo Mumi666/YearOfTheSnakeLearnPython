@@ -55,3 +55,8 @@ class InvertIndexEngine(SearchEngineBase):
         ward_list = text.split(' ')
         ward_list = filter(None, ward_list)
         return set(ward_list)
+
+
+    # wifi 身份证后六位+@+ynby.cn
+    # 00257678
+    # shihongjin@ynby.cn
